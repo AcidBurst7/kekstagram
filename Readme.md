@@ -1,6 +1,6 @@
 # Личный проект «Кекстаграм»
 
-* Студент: [AcidBurst7]({{userProfile}}).
+* Студент: [AcidBurst7](https://htmlacademy.ru/profile/id39035).
 * Наставник: `Неизвестно`.
 
 ---
