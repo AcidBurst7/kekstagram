@@ -20,7 +20,7 @@ function isPalindrom(line) {
   const lineBuffer = line.replaceAll(' ', '').toLowerCase();
   const lineReversed = lineBuffer.split('').reverse().join('');
 
-  return lineBuffer == lineReversed;
+  return lineBuffer === lineReversed;
 }
 
 
@@ -38,16 +38,16 @@ function numberExtract(line) {
   let result = '';
   let buf = '';
 
-  if (typeof line == 'number') {
+  if (typeof line === 'number') {
     result = line;
   } else {
     for (let i = 0; i < line.length; i++) {
-      buf = parseInt(line[i]);
+      buf = parseInt(line[i], 10);
       if (!Number.isNaN(buf)) {
         result += buf;
       }
     }
   }
 
-  return Math.abs(parseInt(result));
+  return Math.abs(parseInt(result, 10));
 }
