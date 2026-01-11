@@ -9,9 +9,9 @@ function checkStringLength(line = '', maxLength = 0) {
   return line.length <= maxLength;
 }
 
-checkStringLength('проверяемая строка', 20));
-checkStringLength('проверяемая строка', 18));
-checkStringLength('проверяемая строка', 10));
+checkStringLength('проверяемая строка', 20);
+checkStringLength('проверяемая строка', 18);
+checkStringLength('проверяемая строка', 10);
 
 
 /**
