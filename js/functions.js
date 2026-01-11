@@ -61,12 +61,12 @@ function numberExtract(line) {
   return Math.abs(parseInt(result, 10));
 }
 
-numberExtract('2023 год');            //2023
-numberExtract('ECMAScript 2022');     //2022
-numberExtract('1 кефир, 0.5 батона'); //105
-numberExtract('агент 007');           //7
-numberExtract('а я томат');           //NaN
-numberExtract(2023);           //2023
-numberExtract(-1);           //1
-numberExtract(1.5);           //2023
+numberExtract('2023 год');//2023
+numberExtract('ECMAScript 2022');//2022
+numberExtract('1 кефир, 0.5 батона');//105
+numberExtract('агент 007');//7
+numberExtract('а я томат');//NaN
+numberExtract(2023);//2023
+numberExtract(-1);//1
+numberExtract(1.5);//2023
 
