@@ -9,6 +9,10 @@ function checkStringLength(line = '', maxLength = 0) {
   return line.length <= maxLength;
 }
 
+checkStringLength('проверяемая строка', 20));
+checkStringLength('проверяемая строка', 18));
+checkStringLength('проверяемая строка', 10));
+
 
 /**
  * Функция для проверки, является ли строка палиндромом.
@@ -22,6 +26,11 @@ function isPalindrom(line) {
 
   return lineBuffer === lineReversed;
 }
+
+isPalindrom('топот'));
+isPalindrom('ДовОд'));
+isPalindrom('Кекс'));
+isPalindrom('Лёша на полке клопа нашёл '));
 
 
 /**
@@ -51,3 +60,13 @@ function numberExtract(line) {
 
   return Math.abs(parseInt(result, 10));
 }
+
+numberExtract('2023 год');            //2023
+numberExtract('ECMAScript 2022');     //2022
+numberExtract('1 кефир, 0.5 батона'); //105
+numberExtract('агент 007');           //7
+numberExtract('а я томат');           //NaN
+numberExtract(2023);           //2023
+numberExtract(-1);           //1
+numberExtract(1.5);           //2023
+
