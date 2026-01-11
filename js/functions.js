@@ -17,8 +17,8 @@ function checkStringLength(line = '', maxLength = 0) {
  */
 
 function isPalindrom(line) {
-  let lineBuffer = line.replaceAll(' ', '').toLowerCase();
-  let lineReversed = lineBuffer.split('').reverse().join('');
+  const lineBuffer = line.replaceAll(' ', '').toLowerCase();
+  const lineReversed = lineBuffer.split('').reverse().join('');
 
   return lineBuffer == lineReversed;
 }
